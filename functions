@@ -21,9 +21,9 @@ function red {
   }
 
 function green {
-  echo -e "$GREEN*$NORMAL"
+  echo -e "$GREEN$*$NORMAL"
   }
   
 function yellow {
-  echo -e "$YELLOW*$NORMAL"
+  echo -e "$YELLOW$*$NORMAL"
   }
