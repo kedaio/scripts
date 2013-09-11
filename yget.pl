@@ -1,7 +1,5 @@
 #!/usr/bin/perl -T
 
-use strict;
-use warnings;
 
 #
 ##  Calomel.org  ,:,  Download Youtube videos and music using wget
@@ -15,6 +13,9 @@ use warnings;
 ##    $1 Youtube URL from the browser
 ##    $2 prefix to the file name of the video (optional)
 #
+
+use strict;
+use warnings;
 
 ############  options  ##########################################
 
