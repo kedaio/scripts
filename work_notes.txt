@@ -2,3 +2,9 @@
 ## g to apply to all lines that match the regex /^$/; d to delete
 
 [ VIM ] :sort u to remove dulicate lines
+
+[ AWK ] awk -F"," '{if ($9 == $10) {print $9}};' $file
+[ AWK ] or awk -F"," '$9 == $10 {print $9};' $file
+## if field 9 is the same as field 10, print field 9
+
+[ VIM ] in vim, use \r to reprent new line characters, instead of \n
