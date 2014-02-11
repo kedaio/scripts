@@ -1,0 +1,4 @@
+[ VIM ] use :g/^$/d to remove empty lines
+## g to apply to all lines that match the regex /^$/; d to delete
+
+[ VIM ] :sort u to remove dulicate lines
