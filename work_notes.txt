@@ -19,4 +19,4 @@
 ## display matching line and the line after it
 ## or use awk '/match this/ { print;getline;print}' $file
 
-
+[ GIT ] git clone repo-uri to clone a repo
