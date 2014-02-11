@@ -1,3 +1,9 @@
+###    NOTE      #############
+
+### due to difference in OS and its versions, platforms, 
+###        executable version and behaviors, these commands/tips
+### may NOT work for you
+
 [ VIM ] use :g/^$/d to remove empty lines
 ## g to apply to all lines that match the regex /^$/; d to delete
 
@@ -8,3 +14,9 @@
 ## if field 9 is the same as field 10, print field 9
 
 [ VIM ] in vim, use \r to reprent new line characters, instead of \n
+
+[ GREP ] grep -A1 $pattern $file
+## display matching line and the line after it
+## or use awk '/match this/ { print;getline;print}' $file
+
+
