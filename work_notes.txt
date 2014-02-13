@@ -20,3 +20,6 @@
 ## or use awk '/match this/ { print;getline;print}' $file
 
 [ GIT ] git clone repo-uri to clone a repo
+
+[ WGET ] wget --recursive --no-clobber --domains phpbb3responsive.com --no-parent phpbb3responsive.com
+## download website recursively
