@@ -25,3 +25,24 @@
 ## download website recursively
 
 ## 6226090210727349
+
+[ perforce ] p4 changelists -s pending -u hongboc
+## list pending changes for user hongboc
+
+## or use p4 changes -c hongboc_filterdist_config.as_dev -s pending
+## results are different. need to find out why
+
+[ perfoce ] p4 changes -u joe 
+# to list all changes belong to suer joe
+
+[ perfoce ] p4 revert -c 12345 
+# to revert all files pending change list 12345
+
+[ perfoce ] p4 client -d <client> 
+## to delete a client
+
+[ perforce ] p4 change -d <change number>
+## to delete a change
+
+[ perforce ] p4 opened
+## to Lists files currently opened in pending changelists
