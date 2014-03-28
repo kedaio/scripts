@@ -46,3 +46,9 @@
 
 [ perforce ] p4 opened
 ## to Lists files currently opened in pending changelists
+
+[ C SHELL ] foreach loop structure
+## foreach i ( one two three )
+## 	echo $i
+## end
+
