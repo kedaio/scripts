@@ -55,3 +55,6 @@
 [ AWK ] awk  'BEGIN {OFS="\t"};{ if ($3 ~ /[\^|\$]/) {$3 = "/"$3"/";};print $0}' $file
 ## change 3rd field of $file if it starts with ^ or ends with $
 ## output content using "\t" as field seperator
+
+[ GCC ] objdump --full-contents --section=.comment  $bin
+## to check the compiler used to produce binary file $bin
