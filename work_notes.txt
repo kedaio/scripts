@@ -58,3 +58,6 @@
 
 [ GCC ] objdump --full-contents --section=.comment  $bin
 ## to check the compiler used to produce binary file $bin
+
+[ DragonFlyBSD ] ifconfig re0 media 1000baseT mediaopt full-duplex
+## set re0 interface to 1000M duplex
