@@ -65,3 +65,6 @@
 
 [ VIM ] :g/^duma/s/$/ -w/
 ## append " -w" to every line that starts with duma
+
+[ DragonFlyBSD ] ifconfig re0 media 1000baseT mediaopt full-duplex
+## set re0 interface to 1000M duplex
