@@ -58,3 +58,10 @@
 
 [ GCC ] objdump --full-contents --section=.comment  $bin
 ## to check the compiler used to produce binary file $bin
+
+[ GAWK ] gawk  'BEGIN {OFS="\t"};{ if ($4 ~ /\yat\y|\yathr\y/) {$5 = "new value";}; {print $0;};}' $file
+## change 5th field to "new value" if 4th field is "at" or "athr", then print the entire file
+## \y is regexp for word boundary (\b is for backspace)
+
+[ VIM ] :g/^duma/s/$/ -w/
+## append " -w" to every line that starts with duma
