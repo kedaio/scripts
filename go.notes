@@ -1,0 +1,15 @@
+package main 
+	//every independent package starts with this
+import (
+	"fmt"
+//	"os"
+//	"syscall"
+)
+	// same as include <stdio.h> for those who knows C
+
+func main() {
+	var input string
+	fmt.Print("Give a file to Open: ")
+	fmt.Scanf("%s",&input)
+	fmt.Println(input)	
+}
