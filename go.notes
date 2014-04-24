@@ -2,7 +2,8 @@ package main
 	//every independent package starts with this
 import (
 	"fmt"
-//	"os"
+	"os"
+	"log"
 //	"syscall"
 )
 	// same as include <stdio.h> for those who knows C
@@ -12,4 +13,29 @@ func main() {
 	fmt.Print("Give a file to Open: ")
 	fmt.Scanf("%s",&input)
 	fmt.Println(input)	
+	file, err := os.Open(input)
+	defer file.Close()
+
+	if err != nil {
+	//fmt.Println("Something goes wrong with the file man ...")
+		log.Fatal(err)
+		return
+		}
+	fd :=file.Fd()
+	fmt.Printf("File descriptor is %d\n",fd)
+	
+	//  this won't work, (my guess is that) Read takes
+	// an slice as argument instead of array
+
+	// var byte_array [50]byte
+	stat, err := file.Stat()	
+	byte_array := make([]byte, stat.Size())
+
+	_, err = file.Read(byte_array)
+
+	if err != nil {
+		log.Fatal(err)
+		return
+		}
+	fmt.Println(string(byte_array))
 }
