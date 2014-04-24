@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/env bash
 
 #######  HE tunnel broker account info  ##############
 #######  UPDATE THEM ACCORDING TO YOUR ACCOUNT  ######
