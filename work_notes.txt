@@ -68,3 +68,5 @@
 
 [ DragonFlyBSD ] ifconfig re0 media 1000baseT mediaopt full-duplex
 ## set re0 interface to 1000M duplex
+
+[ WINDOWS ] net use z: \\some_computer\share /user:domain\username
