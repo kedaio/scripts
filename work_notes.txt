@@ -70,3 +70,7 @@
 ## set re0 interface to 1000M duplex
 
 [ WINDOWS ] net use z: \\some_computer\share /user:domain\username
+
+[ UBUNTU ] mount tmpfs /dir_to_mnt -t tmpfs -o size=256M
+## mount an tmpfs dir /dir_to_mnt of size 256M
+
