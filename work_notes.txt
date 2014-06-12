@@ -70,3 +70,7 @@
 ## set re0 interface to 1000M duplex
 
 [ WINDOWS ] net use z: \\some_computer\share /user:domain\username
+## map CIFS share \\some_computer\share to z: drive on localhost
+
+[ VIM ] awk '{t = NR % 5;} {if (t == 1 || t == 4) {print}}' tmp2 
+## in a file that contains paragraphs of 5 lines, print every 1st & 4th line
