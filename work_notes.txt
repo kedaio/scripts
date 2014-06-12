@@ -74,3 +74,6 @@
 
 [ VIM ] awk '{t = NR % 5;} {if (t == 1 || t == 4) {print}}' tmp2 
 ## in a file that contains paragraphs of 5 lines, print every 1st & 4th line
+
+[ UBUNTU ] mount tmpfs /dir_to_mnt -t tmpfs -o size=256M
+## mount an tmpfs dir /dir_to_mnt of size 256M
